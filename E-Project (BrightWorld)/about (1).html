@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* header */
+        .header:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .3;
+    z-index: -1;
+    background: linear-gradient(to right,#ffffff 0%, #ffffcc 100%);
+}
+
+.navbar:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .3;
+    z-index: -1;
+    background: linear-gradient(to right, red 0%, red 100%);
+}
+
+.nav-item a{
+    color: blue;
+    font-weight: bold;
+}
+
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.header-buttons a{
+    border: 1px solid white;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.header-buttons a:hover{
+    color: #50d1c0;
+    background: white;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(black);
+}
+
+/*..........................3 header parts Start....................... */
+
+.header-part{
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.container h1{
+    margin-top: -60px;
+}
+.div-part{
+    background: white;
+    border: medium none;
+    padding: 50px!important;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.div-part:hover{
+    box-shadow: 0 0 20px 0 purple;
+    transform: translateY(-20px);
+}
+        /* header end */
+       
+        
+        /* About us */
+#about_us{
+    margin-top: 5px;
+    
+}
+
+h1{
+    color: #17202A;
+    text-align: center;
+    font-size: 60px; 
+    
+}
+.desp{
+    margin-top: 80px;
+    text-align: center;
+}
+i{
+    font-size: 60px;
+    color: maroon;
+}
+span{
+    color: black;
+    font-weight: bolder;
+}
+p{
+    color: #566573;
+}
+.plans{
+    margin-top: 80px;
+    text-align: center;
+
+}
+h3{
+    color: black;
+    margin-top: 20px;
+}
+.team{
+    margin-top: 80px;
+}
+#pic{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+#pic img{
+    height: 250px;
+    width: 300px;
+    border: 2px solid #566573;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+
+}
+#para{
+    font-size: 20px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+}
+/* about us end */
+
+/* footer start */
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #F4D03F;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.social-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    
+}
+.fa-facebook-f{
+    font-size: 30px;
+    color: #F4D03F;
+} 
+.fa-facebook-f:hover{
+	color: #4267B2;
+}
+.fa-twitter{
+    font-size: 30px;
+    color: #F4D03F;
+}
+.fa-twitter:hover{
+	color: #1DA1F2;
+}
+.fa-instagram{
+    font-size: 30px;
+    color: #F4D03F;
+}
+.fa-instagram:hover{
+	color: #d6249f;
+}
+.fa-linkedin-in{
+    font-size: 30px;
+    color: #F4D03F;
+}
+.fa-linkedin-in:hover{
+	color: #0077b5;
+}
+.last{
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+.last p{
+    color: white;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+/* footer end */
+    </style>
+</head>
+
+<body>
+    <!-- navigation -->
+    <div class="header" id="topheader">
+        <nav class="navbar navbar-expand-sm bg-dark fixed-top">
+          <div class="container">
+            <img src="images/logo image1.jpg" style="width:50px; height:50px;">
+            <a class="navbar-brand font-weight-bold text-white" style="margin-left:2px;" href="#">Bright World</a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto text-uppercase">
+                <li class="nav-item active">
+                  <a class="nav-link text-white text-center" href="index.html" target="blank">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white text-center" href="Gallery.html" target="blank">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white text-center" href="about (1).html" target="blank">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white text-center" href="Contact us _ Footer.html" target="blank">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white text-center" href="feedback.html" target="blank">Feedback</a>
+                </li>
+              </ul>
+
+
+              <a href="login (1).html" target="blank"><button type="button" class="btn btn-dark text-white font-weight-bold text-center">Login Now</button></a>
+            </div>
+
+          </div>
+        </nav>
+          
+    </div>
+
+
+    <!-- navigation end -->
+    
+
+    <!-- about us -->
+    <div class="container" id="about_us">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <h1>About Us</h1>
+                <div class="desp">
+                    <i class="far fa-lightbulb"></i> <br>
+                    <p><span>Bright World</span> We are a lighting innovator and believe in lighting the way to a
+                        brighter future across Pakistan at an international standard.</p>
+                    <p>mproving people’s lives through meaningful innovation. That’s our mission!</p>
+                    <p>We are proud to be Pakistani LED manufacturing company that is following the United Nations
+                        Sustainable Development Goal “Clean and Affordable Energy” by combining Energy Efficiency and
+                        Renewable Energy and providing sustainable lighting solutions across Pakistan. By expanding the
+                        venture’s initiatives on LED lighting – which provide energy savings of 50 percent to 70 percent
+                        compared to other technologies – Crest aims to provide a sustainable solution by reducing the
+                        carbon dioxide-equivalent emissions.</p>
+                </div>
+                <div class="plans">
+                    <i class="fas fa-globe-asia"></i>
+                    <h3>Our Plans</h3>
+                    <p> Bright world is a lighting innovator. We are a local company with a global outlook. Our staff
+                        has strong relationships with partners, infrastructure providers, and companies. At Crest we
+                        strive to manufacture closer to the customer; we understand client’s needs in terms of
+                        efficiency, sustainability, and budget. With multiple branches across Pakistan, Crest has been
+                        successful in establishing a stronghold among major cities of Pakistan; Karachi, Islamabad,
+                        Rawalpindi, Lahore, Faisalabad, Multan, Sialkot & Peshawar.</p>
+                    <p>We are a leading LED company that is providing intelligent lighting systems. Crest is
+                        transforming smart homes, business, buildings, and cities.</p>
+                </div>
+                <div class="team">
+                    <h1 class="heading">Managing Partners</h1>
+                    <div id="pic">
+                        <img src="https://media.istockphoto.com/photos/young-good-looking-asian-business-man-on-a-white-background-isolated-picture-id1185795614?k=20&m=1185795614&s=612x612&w=0&h=X1WWjfxXRpV9RHuVgOO0fkq0Kg8L6cgJmT4UKXDE6k4="
+                            alt="Image">
+                        <div id="intro">
+                            <h2>Furqan ur Rehman</h2>
+                            <p id="para">Furqan ur Rehman is the Director of Administration and the Director of Civil
+                                Engineering
+                                wing at Creative Electronics and Automation. Prior to joining Creative Electronics and
+                                Automation,
+                                he has served as a Highway Engineer with FINNROAD and General Consultants.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="pic">
+                        <img src="https://media.istockphoto.com/photos/confident-businessman-posing-in-the-office-picture-id891418990?k=20&m=891418990&s=612x612&w=0&h=Nwg4n_KYcQMRDU17UaIt9k2ef5ZJ8Ix1rXvHMj2Rnj4="
+                            alt="Image">
+                        <div id="intro">
+                            <h2>Adnan ur Rehman</h2>
+                            <p id="para">Adnan ur Rehman is the Technical Director at Creative Electronic and
+                                Automation.
+                                Adnan holds more than 25 years of professional experience and was a pioneer in
+                                introducing
+                                power protectionelectronic products in Pakistan. Shahzad has successfully developed
+                                industrial
+                                solutions for various industries and is a member of Pakistan Engineering Council.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="pic">
+                        <img src="https://media.istockphoto.com/photos/portrait-young-confident-smart-asian-businessman-look-at-camera-and-picture-id1288538088?k=20&m=1288538088&s=612x612&w=0&h=tQPfhDfWqApLGZN_rIv6_eV464qOAH9SqXsJYAJveYY="
+                            alt="Image">
+                        <div id="intro">
+                            <h2>Muhammad Wahaj</h2>
+                            <p id="para">Muhammad Wahaj is the Managing Partner and the head of Marketingat Creative
+                                Electronic
+                                and Automation. Wahaj heads the marketing operations of Creative Electronics and
+                                Automation and oversees the strategic marketing of the company.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="pic">
+                        <img src="https://media.istockphoto.com/photos/smiling-handsome-middleaged-man-in-black-shirt-picture-id1248747884?k=20&m=1248747884&s=612x612&w=0&h=0GoQo0Z22bGTjJgYhY3Gq1CfBj-R3WO4w3loFigtIjg="
+                            alt="Image">
+                        <div id="intro">
+                            <h2>Abdul Waheed</h2>
+                            <p id="para"> Abdul Waheed has previously worked with Pauling PLC, Civil Engineering
+                                Contractors,
+                                he has also worked with the
+                                Government of Pakistan in the Ministry of Labour and Manpower and Overseas Pakistan
+                                as an Assistant Director.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="Bright World.html" target="_blank">Home</a></li>
+                        <li><a href="about (1).html" target="_blank">About Us</a></li>
+                        <li><a href="Contact us _ Footer.html" target="_blank">Contact Us</a></li>
+                        <li><a href="Gallery.html" target="_blank">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="login (1).html" target="blank">Login</a></li>
+                        <li><a href="feedback.html" target="blank">Feedback</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="Bulbs.html" target="blank">Bulb </a></li>
+                        <li><a href="Spot Lights.html" target="blank">Spot Lights</a></li>
+                        <li><a href="Fog Lights.html" target="blank">Fog lights</a></li>
+                        <li><a href="Disco Lights.html" target="blank">Disco Lights</a></li>
+                        <li><a href="Street Lights.html" target="blank">Street Lights</a></li>
+                        <li><a href="Decoration Lights.html" target="blank">Decorartion /lights</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="last">
+                        <p >Bright World © Powered by Aptech</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+   
+<!-- footer end  -->
+
+
+
+
+
+
+
+
+
+    <script src="bootstrap-4.6.0-dist/js/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>

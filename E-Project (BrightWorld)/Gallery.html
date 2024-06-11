@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Gallery Page</title>
+    <style>
+        /* header */
+      
+     .header:before{
+        content: "";
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        left: 0;
+        right: 0;
+        opacity: .3;
+        z-index: -1;
+        background: linear-gradient(to right,#ffffff 0%, #ffffcc 100%);
+    }
+    
+    .navbar:before{
+        content: "";
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        left: 0;
+        right: 0;
+        opacity: .3;
+        z-index: -1;
+        background: linear-gradient(to right, red 0%, red 100%);
+    }
+    
+    .nav-item a{
+        color: blue;
+        font-weight: bold;
+    }
+    
+    .header-section{
+        width: 100%;
+        height: inherit;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+    
+    .center-div{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+    
+    .header-buttons a{
+        border: 1px solid white;
+        border-radius: 100px;
+        margin: 0 5px;
+        padding: 12px 35px;
+        outline: none;
+        color: white;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.4;
+        text-align: center;
+    }
+    
+    .header-buttons a:hover{
+        color: #50d1c0;
+        background: white;
+        text-decoration: none;
+        box-shadow: 0 0 20px 0 rgba(black);
+    }
+    
+    /*..........................3 header parts Start....................... */
+    
+    .header-part{
+        width: 100%;
+        height: auto;
+        margin: 100px 0;
+        text-align: center;
+    }
+    
+    .container h1{
+        margin-top: -60px;
+    }
+    .div-part{
+        background: white;
+        border: medium none;
+        padding: 50px!important;
+        border-radius: 3px;
+        transition: 0.3s;
+    }
+    
+    .div-part:hover{
+        box-shadow: 0 0 20px 0 purple;
+        transform: translateY(-20px);
+    }
+            /* header end */
+
+
+
+
+
+
+
+
+    /* footer start */
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+    margin-top: -75px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #F4D03F;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.social-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    
+}
+.fa-facebook-f{
+    font-size: 30px;
+    color: #F4D03F;
+} 
+.fa-facebook-f:hover{
+	color: #4267B2;
+}
+.fa-twitter{
+    font-size: 30px;
+    color: #F4D03F;
+}
+.fa-twitter:hover{
+	color: #1DA1F2;
+}
+.fa-instagram{
+    font-size: 30px;
+    color: #F4D03F;
+}
+.fa-instagram:hover{
+	color: #d6249f;
+}
+.fa-linkedin-in{
+    font-size: 30px;
+    color: #F4D03F;
+}
+.fa-linkedin-in:hover{
+	color: #0077b5;
+}
+.last{
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+.last p{
+    color: white;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+/* footer end */
+
+
+
+
+ </style>
+
+</head>
+
+<body>
+    
+
+
+    <!------------------- Navigation Area Start here ------------------->
+
+    <div class="header" id="topheader">
+        <nav class="navbar navbar-expand-sm bg-dark fixed-top">
+          <div class="container">
+            <img src="images/logo image1.jpg" style="width:50px; height:50px;">
+            <a class="navbar-brand font-weight-bold text-white" style="margin-left:2px;" href="#">Bright World</a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" style="background-color: white;"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto text-uppercase">
+                <li class="nav-item active">
+                  <a class="nav-link text-white text-center" href="index.html" target="blank">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white text-center" href="Gallery.html" target="blank">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white text-center" href="about (1).html" target="blank">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white text-center" href="Contact us _ Footer.html" target="blank">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white text-center" href="feedback.html" target="blank">Feedback</a>
+                </li>
+              </ul>
+
+
+              <a href="login (1).html" target="blank"><button type="button" class="btn btn-dark text-white font-weight-bold text-center">Login Now</button></a>
+            </div>
+
+          </div>
+        </nav>
+          
+    </div>
+
+  <!-- Products  Card Start here  -->
+
+  <div class="container-flex mt-5">
+  
+    <!-- First Row for Prodcuts Card -->
+
+    <div class="row p-5">
+        <div class="col-sm-12 col-md-6 col-lg-3 ">
+            <div class="card">
+                <img class="card-img-top" src="images/bulb image.jpg" alt="Card image" style="width:100%;  height:200px;" >
+                <div class="card-body" >
+                    <h4 class="card-title text-center font-weight-bold" style="color: maroon;">Bulbs</h4>
+                    <p class="card-text text-center font-weight-bold" style="color: maroon;">Some special bulbs are here for purchase, press click to add to cart and press download for detail description.
+                    </p>
+                    <a href="Bulbs.html" target="blank"><button type="button" class="btn btn-dark font-weight-bold w-100 m-auto fa-1x">
+                        Click Here</button></a><br><br>
+                    <a href="documents/Different Bulbs.pdf" target="blank"><button type="button" 
+                        class="btn text-white downloadbtn font-weight-bold m-auto w-100 fa-1x" style="background-color: maroon;">
+                        Download PDF</button></a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+                <img class="card-img-top" src="images/Spot Light2.jpg" alt="Card image" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h4 class="card-title text-center font-weight-bold" style="color: maroon;">Spot Lights</h4>
+                    <p class="card-text text-center font-weight-bold" style="color: maroon;">
+                        Some special Spot ligtts are here for purchase, press click to add to cart and press download for detail
+                         description.
+                    </p>
+                    <a href="Spot Lights.html" target="blank"><button type="button" 
+                        class="btn btn-dark font-weight-bold w-100 m-auto fa-1x">Click Here</button></a><br><br>
+                    <a href="documents/Spot Lights 2.pdf" target="blank"><button type="button" 
+                        class="btn btn-info downloadbtn font-weight-bold w-100 m-auto fa-1x" style="background-color: maroon;">
+                        Download PDF</button></a><br><br>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+                <img class="card-img-top" src="images/Decoration Light3.jpg" alt="Card image" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h4 class="card-title text-center font-weight-bold" style="color: maroon;">Decoration Lights</h4>
+                    <p class="card-text text-center font-weight-bold" style="color:maroon;">
+                        Some special Decoration ligtts are here for purchase, press click to add to cart and press download for detail 
+                        description.
+                    </p>
+                    <a href="Decoration Lights.html" target="blank"><button type="button" 
+                        class="btn btn-dark font-weight-bold w-100 m-auto fa-1x">Click Here</button></a><br><br>
+                    <a href="documents/Decoration Lights.pdf" target="blank"><button type="button" 
+                        class="btn btn-info downloadbtn font-weight-bold w-100 m-auto fa-1x" style="background-color: maroon;">
+                        Download PDF</button></a><br><br>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+                <img class="card-img-top" src="images/Fancy Lights1.jpg" alt="Card image" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h4 class="card-title text-center font-weight-bold" style="color: maroon;">Smart Lights</h4>
+                    <p class="card-text text-center font-weight-bold" style="color: maroon;">
+                        Some special Smart ligtts are here for purchase, press click to add to cart and press download for detail 
+                        description.
+                    </p>
+                    <a href="Smart Lights.html" target="blank"><button type="button" 
+                        class="btn btn-dark font-weight-bold w-100 m-auto fa-1x">Click Here</button></a><br><br> 
+                    <a href="documents/Smart Lights 4.pdf" target="_blank"><button type="button" 
+                        class="btn btn-info downloadbtn font-weight-bold w-100 m-auto fa-1x" style="background-color: maroon;">
+                        Download PDF</button></a><br><br> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- First Row End Here -->
+
+
+    <!-- 2nd row Product -->
+    <div class="row p-5">
+        <div class="col-sm-12 col-md-6 col-lg-3 ">
+            <div class="card">
+                <img class="card-img-top" src="https://m.media-amazon.com/images/I/717-bUKKFAL._AC_SS450_.jpg" 
+                alt="Card image" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h4 class="card-title text-center font-weight-bold" style="color: maroon;">Fog Lights</h4>
+                    <p class="card-text text-center font-weight-bold" style="color: maroon;">
+                        Some special Fog ligtts are here for purchase, press click to add to cart and press download for detail 
+                        description.
+                    </p>
+                    <a href="Fog Lights.html" target="blank"><button type="button" 
+                        class="btn btn-dark font-weight-bold w-100 m-auto fa-1x">Click Here</button></a><br><br>  
+                    <a href="documents/Fog Lights.pdf" target="blank"><button type="button" 
+                        class="btn btn-info downloadbtn font-weight-bold w-100 m-auto fa-1x" style="background-color: maroon;">
+                        Download PDF</button></a><br><br>  
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVGY6cXm_m6UWZAHszrL7qQeT3gBy2UhGPKg&usqp=CAU" alt="Card image" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h4 class="card-title text-center font-weight-bold" style="color: maroon;">Disco Lights</h4>
+                    <p class="card-text text-center font-weight-bold" style="color: maroon;">
+                        Some special Disco ligtts are here for purchase, press click to add to cart and press download for detail 
+                        description.
+                    </p>
+                    <a href="Disco Lights.html" target="blank"><button type="button" 
+                        class="btn btn-dark font-weight-bold w-100 m-auto fa-1x">Click Here</button></a><br><br>
+                    <a href="documents/DISCO LIGHTS.pdf" target="blank"><button type="button" 
+                        class="btn btn-info downloadbtn font-weight-bold w-100 m-auto fa-1x" style="background-color: maroon;">
+                        Download PDF</button></a><br><br>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+                <img class="card-img-top" src="data:image/jpeg;base64,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" alt="Card image" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h4 class="card-title text-center font-weight-bold" style="color: maroon;">Street Lights</h4>
+                    <p class="card-text text-center font-weight-bold" style="color: maroon;">
+                        Some special Street ligtts are here for purchase, press click to add to cart and press download for detail 
+                        description.
+                    </p>
+                    <a href="Street Lights.html" target="blank"><button type="button" 
+                        class="btn btn-dark font-weight-bold w-100 m-auto fa-1x">Click Here</button></a><br><br>
+                    <a href="documents/Street Lights.pdf" target="blank"><button type="button" 
+                        class="btn btn-info downloadbtn font-weight-bold w-100 m-auto fa-1x" style="background-color: maroon;">
+                        Download PDF</button></a><br><br>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+                <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuCGvOBR1ZVWvwmNXXNUfK_ulVnue0OeOSXw&usqp=CAU" alt="Card image" style="width:100%; height:200px;">
+                <div class="card-body">
+                    <h4 class="card-title text-center font-weight-bold" style="color: maroon;">Energy Savers</h4>
+                    <p class="card-text text-center font-weight-bold" style="color: maroon;">
+                        Some special Energy Savers are here for purchase, press click to add to cart and press download for detail 
+                        description.
+                    </p>
+                    <a href="Energy Savers.html" target="blank"><button type="button" 
+                        class="btn btn-dark font-weight-bold w-100 m-auto fa-1x">Click Here</button></a><br><br>
+                    <a href="documents/Energy Savers.pdf" target="blank"><button type="button" 
+                        class="btn btn-info downloadbtn font-weight-bold w-100 m-auto fa-1x" style="background-color: maroon;">
+                        Download PDF</button></a><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+<!-- 2nd Row End Here -->
+
+
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about (1).html" target="blank">About Us</a></li>
+                    <li><a href="Contact us _ Footer.html" target="blank">Contact Us</a></li>
+                    <li><a href="Gallery.html" target="blank">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="login (1).html" target="blank">Login</a></li>
+                    <li><a href="feedback.html" target="blank">Feedback</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="Bulbs.html" target="blank">Bulb </a></li>
+                    <li><a href="Spot Lights.html" target="blank">Spot Lights</a></li>
+                    <li><a href="Fog Lights.html" target="blank">Fog lights</a></li>
+                    <li><a href="Disco Lights.html" target="blank">Disco Lights</a></li>
+                    <li><a href="Street Lights.html" target="blank">Street Lights</a></li>
+                    <li><a href="Decoration Lights.html" target="blank">Decoration lights</a></li>
+                    <li><a href="Smart Lights.html" target="blank">Smart Lights</a></li>
+                    <li><a href="Energy Savers.html" target="blank">Energy Savers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="last">
+                    <p >Bright World © Powered by Aptech</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- footer end  -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>
